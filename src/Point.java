@@ -29,14 +29,18 @@ public class Point {
     }
 
     public double distance() {
-        return Math.sqrt(x * x + y * y);
+//        return Math.sqrt(x * x + y * y);
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(x, 2));
     }
 
     public double distance(Point p) {
-        return Math.sqrt(
-                (this.x - p.getX()) * (this.x - p.getX())
-                + (this.y - p.getY()) * (this.y - p.getY())
-        );
+        if (p != null) {
+            return Math.sqrt(
+                    (this.x - p.getX()) * (this.x - p.getX())
+                            + (this.y - p.getY()) * (this.y - p.getY())
+            );
+        }
+        return distance();
     }
 
     public double distance(int a, int b) {

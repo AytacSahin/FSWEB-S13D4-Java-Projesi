@@ -3,7 +3,7 @@ public class Main {
 
         System.out.println("******************************************************");
         Point first = new Point(6, 5);
-        Point second = new Point(6, 5);
+        Point second = new Point(3, 1);
         first.Test();
         System.out.println("[1] distance(0,0)= " + first.distance());
         System.out.println("[2] distance(second)= " + first.distance(second));
